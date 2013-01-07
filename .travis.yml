@@ -1,0 +1,10 @@
+language: java
+jdk:
+  - oraclejdk7
+  - openjdk6
+  - openjdk7
+matrix:
+  allow_failures:
+    - jdk: oraclejdk7
+script: "javac TestPolicyFiles.java && java TestPolicyFiles"
+
